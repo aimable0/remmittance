@@ -5,24 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Remmittance.com</title>
     <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@200;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="">REMMITTANCE</a></li>
-                <li><a href="">Log in / Join</a></li>
-                <li><a href="">Menu</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li class="logo"><a href="">REMMITTANCE</a></li>
+                    <li class="nav-buttons">
+                        <a href="" class="log-in">Log in / Join</a>
+                        <img src="images/menu.png" alt="menu-icon">
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <!-- banner -->
         <div class="banner">
             <div class="container">
                 <div class="row">
-                    <div class="bg-img"></div>
-                    <div>
+                    <div class="hero">
+                        <div class="overlay"></div>
                         <div class="main-title">
                             <h1>Remmittance</h1>
                         </div>
@@ -44,43 +52,67 @@
                     </div>
                     <div class="services-block">
                         <div class="service">
-                            <div class="svc-img"></div>
+                            <div class="svc-img">
+                                <img src="images/call.png" alt="">
+                            </div>
                             <div class="svc-content">
-                                <div class="svc-title"></div>
-                                <div class="svc-mini-title"></div>
+                                <div class="svc-title">
+                                    <h4>airtime</h4>
+                                </div>
+                                <div class="svc-mini-title">
+                                    <h5>Airtime Recharge</h5>
+                                </div>
                             </div>
                             <div class="svc-btn">
                                 <button>Buy now</button>
                             </div>
                         </div>
                         <div class="service">
-                            <div class="svc-img"></div>
+                            <div class="svc-img">
+                                <img src="images/electric.png" alt="">
+                            </div>
                             <div class="svc-content">
-                                <div class="svc-title"></div>
-                                <div class="svc-mini-title"></div>
+                                <div class="svc-title">
+                                    <h4>electricity</h4>
+                                </div>
+                                <div class="svc-mini-title">
+                                    <h5>Electricity Recharge</h5>
+                                </div>
                             </div>
                             <div class="svc-btn">
                                 <button>Buy now</button>
                             </div>
                         </div>
                         <div class="service">
-                            <div class="svc-img"></div>
+                            <div class="svc-img">
+                                <img src="images/tv.png" alt="">
+                            </div>
                             <div class="svc-content">
-                                <div class="svc-title"></div>
-                                <div class="svc-mini-title"></div>
+                                <div class="svc-title">
+                                    <h4>tv subscription</h4>
+                                </div>
+                                <div class="svc-mini-title">
+                                    <h5>Startimes Subscription</h5>
+                                </div>
                             </div>
                             <div class="svc-btn">
                                 <button>Buy now</button>
                             </div>
                         </div>
-                        <div class="service">
-                            <div class="svc-img"></div>
+                        <div class="service four">
+                            <div class="svc-img">
+                                <img src="images/tax.png" alt="" width="62px">
+                            </div>
                             <div class="svc-content">
-                                <div class="svc-title"></div>
-                                <div class="svc-mini-title"></div>
+                                <div class="svc-title">
+                                    <h4>tax</h4>
+                                </div>
+                                <div class="svc-mini-title">
+                                    <h5>Tax Payment</h5>
+                                </div>
                             </div>
                             <div class="svc-btn">
-                                <button>Buy now</button>
+                                <button>Pay now</button>
                             </div>
                         </div>
                     </div>
@@ -97,25 +129,43 @@
                         <h1>How it <span>Works</span></h1>
                     </div>
                     <div class="steps">
-                        <div class="step-1">
-                            <div class="step-icon"></div>
+                        <div class="step">
+                            <div class="step-icon">
+                                <img src="images/steps-icon/Vector.png" alt="">
+                            </div>
                             <div class="step-content">
-                                <div class="step-title"></div>
-                                <div class="step-mini-title"></div>
+                                <div class="step-title">
+                                   <h4>Account creation</h4>
+                                </div>
+                                <div class="step-mini-title">
+                                    <p>create account to get started</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="step-2">
-                            <div class="step-icon"></div>
+                        <div class="step">
+                            <div class="step-icon">
+                                <img src="images/steps-icon/Vector (1).png" alt="">
+                            </div>
                             <div class="step-content">
-                                <div class="step-title"></div>
-                                <div class="step-mini-title"></div>
+                                <div class="step-title">
+                                    <h4>service selection</h4>
+                                </div>
+                                <div class="step-mini-title">
+                                    <p>Select service to buy or pay</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="step-3">
-                            <div class="step-icon"></div>
+                        <div class="step">
+                            <div class="step-icon">
+                                <img src="images/steps-icon/Vector (2).png" alt="">
+                            </div>
                             <div class="step-content">
-                                <div class="step-title"></div>
-                                <div class="step-mini-title"></div>
+                                <div class="step-title">
+                                    <h4>complete payment</h4>
+                                </div>
+                                <div class="step-mini-title">
+                                    <p>complete the transaction</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -125,26 +175,32 @@
         <!-- end how-it-works -->
 
         <div class="logos">
-            <ul>
-                <li><img src="" alt="logo"></li>
-                <li><img src="" alt="logo"></li>
-                <li><img src="" alt="logo"></li>
-                <li><img src="" alt="logo"></li>
-                <li><img src="" alt="logo"></li>
-                <li><img src="" alt="logo"></li>
-            </ul>
-        </div>
-
-        <div class="3d-1">
             <div class="container">
                 <div class="row">
-                    <div class="3d-content">
-                        <div class="3d-text">
+                    <div class="logos-section">
+                        <ul>
+                            <li><img src="images/logos/visa.webp" alt="logo" width="50px"></li>
+                            <li><img src="images/logos/master-colored.svg" alt="logo" width="50px"></li>
+                            <li><img src="images/logos/discover-logo1.png" alt="logo" width="70px"></li>
+                            <li><img src="images/logos/jcb.png" alt="logo" width="40px"></li>
+                            <li><img src="images/logos/mtn.png" alt="logo" width="50px"></li>
+                            <li><img src="images/logos/paypal.jpeg" alt="logo" width="90px"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="three-d-1">
+            <div class="container">
+                <div class="row">
+                    <div class="three-d-content">
+                        <div class="three-d-text">
                             <div>
                                 <h3>quick and reliable</h3>
                             </div>
                             <div>
-                                <h2>Pay instantaly!</h2>
+                                <h2>Pay <span>Instantly!</span></h2>
                             </div>
                             <div>
                                 <p>The most secure and convenient app <br>
@@ -156,45 +212,47 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="3d-img">
-                            <img src="" alt="3d-illustration">
+                        <div class="three-d-img-1">
+                            <img src="images/3d-illutrations/3d-1.png" alt="3d-illustration">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="Testimonials">
+        <div class="testimonials">
             <div class="container">
                 <div class="row">
                     <div class="section-title">
-                        <h1>Read What <span>others</span> Have to <span></span></h1>
+                        <h1>Read What <span>others</span><br> Have to <span>Say</span></h1>
                     </div>
                     <div class="testimonies">
-                        <div class="testimony-1">
-                            <div><img src="" alt=""></div>
-                            <div class="test-content">
+                        <div class="testimony">
+                            <div class="testimony-img">
+                                <img src="images/testimonials-img/testimony-img.png" alt="">
+                            </div>
+                            <div class="testimony-content">
                                 <div>
                                     <h4>olivia cole</h4>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio iusto modi alias non nam ipsam hic sed recusandae repellat ea </p>
-                                    <img src="" alt="quote-icon">
+                                    <img src="images/quote.png" alt="quote-icon">
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div>...</div>
+                    <div class="dots">...</div>
                 </div>
             </div>
         </div>
 
-        <div class="3d-2">
+        <div class="three-d-2">
             <div class="container">
                 <div class="row">
-                    <div class="3d-content">
-                        <div>
-                            <img src="" alt="3d-image">
+                    <div class="three-d-content three-d-content-2">
+                        <div class="three-d-img-2">
+                            <img src="images/3d-illutrations/3d-2.png" alt="3d-image">
                         </div>
-                        <div>
+                        <div class="quick-service">
                             <div>
                                 <h4><span>quick service</span> for your loved ones</h4>
                             </div>
@@ -221,11 +279,11 @@
                     <h2>Join our newsletter</h2>
                 </div>
                 <div>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti veniam error quasi sit aut cupiditate, assumenda asperiores vitae quae similique illum consectetur modi inventore aliquid eius maxime ullam adipisci quisquam.</p>
+                    <p class="news-letter-info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti veniam error quasi sit aut cupiditate, assumenda asperiores vitae quae similique</p>
                 </div>
                 <div class="subscribe">
                     <form action="">
-                        <input type="text" name="" id="" placeholder="email address">
+                        <input type="text" name="" id="" placeholder="Email Address">
                         <button>subsrcibe</button>
                     </form>
                 </div>
@@ -270,10 +328,11 @@
                             </div>
                         </div>
                     </div>
-                    <p> copyright 2025 | Remmittance</p>
+
                 </div>
             </div>
         </div>
+        <p class="copyright"> &copy; copyright 2025 | Remmittance</p>
     </footer>
 </body>
 </html>
