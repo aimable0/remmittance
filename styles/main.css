@@ -41,6 +41,7 @@ nav {
     font-weight: bold;
     font-family: 'outfit';
     letter-spacing: 0.5px;
+    margin-left: 12px;
 }
 nav ul {
     display: flex;
@@ -67,6 +68,7 @@ nav ul a {
 
 /* banner */
 .hero {
+    position: relative; /* Needed for absolute overlay */
     background-image: url(../images/hero-background.jpg);
     background-size: cover;
     background-position: center;
@@ -76,33 +78,55 @@ nav ul a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    z-index: 1000;
+    align-items: center; /* Center text horizontally */
 }
+
 .overlay {
-    content: "";
-    height: 180px;
     position: absolute;
-    background-color: #362b2b;
+    top: 0;
+    left: 0;
+    width: 100%; /* Make it full width */
+    height: 100%; /* Match .hero height */
+    background-color: rgba(0, 0, 0, 0.4);
     z-index: 1;
-    opacity: 0.5;
+}
+
+.hero h1,
+.hero p {
+    font-family: 'Outfit';
+    color: white;
+    width: 100%;
+    text-align: left;
+    z-index: 2;
+    padding-bottom: 10px;
+    margin-left: 30px;
 }
 .hero h1 {
-    height: 100%;
-    font-size: 20px;
-    color: white;
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 .hero p {
-    height: 100%;
-    font-size: 15px;
-    color: white;
+    letter-spacing: 0.4px;
+    font-size: 14px;
+    font-weight: 200;
+}
+.hero span {
+    color: #F28C38;
 }
 
 /* services */
 .our-services h1 {
     font-size: 20px;
     text-align: center;
+    color: #504E4E;
+    margin-top: 20px;
 }
-
+.underline {
+    border-bottom: 2px solid #C9732C;
+    margin: 10px auto;
+    width: 30px;
+}
 .our-services span {
     color: #C9732C;
 }
@@ -115,6 +139,8 @@ nav ul a {
     margin: 25px auto;
     border-radius: 8px;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .service h4 {
     font-family: 'outfit';
@@ -122,6 +148,7 @@ nav ul a {
     font-size: 12px;
     color: #D97E2E;
     letter-spacing: 1.5px;
+    margin-bottom: 5px;
 }
 .service h5 {
     font-family: 'outfit';
@@ -129,9 +156,13 @@ nav ul a {
     letter-spacing: 0.7px;
     font-size: 12px;
 }
+/* shaping taxx icon */
 .service .four .svc-img{
     border-radius: 8px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.svc-img {
+    margin-left: 15px;
 }
 
 .svc-btn button{
@@ -146,36 +177,49 @@ nav ul a {
     font-weight: 600;
     line-height: 10px;
     box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.25);
+    margin-right: 15px;
 }
 /* end services */
 
 /* how-it-works */
-.how-it-works h1 {
+.how-it-works .section-title h1 {
+    margin-top: 50px;
     font-size: 20px;
     text-align: center;
+    color: #504E4E;
 
 }
 .how-it-works span {
     color:#C9732C
 }
-.how-it-works .steps{
-    background-color: #D9D9D9;
-}
-.steps {
-    padding: 10px;
+.steps{
+    padding: 20px;
+    margin: 0px auto;
 }
 .steps h4 {
     font-size: 14px;
     text-transform: capitalize;
-    font-weight: 500;
+    font-weight: 400;
+    font-family: 'poppins';
+    margin-bottom: 2px;
 }
 .steps p {
     font-size: small;
     color: #686868;
+    font-family: 'poppins';
 }
 .step {
     display: flex;
     margin: 20px auto;
+    align-items: center;
+}
+.step-content {
+    margin-left: 20px;
+}
+.steps-box {
+    margin-top: 25px;
+    background-color: #D9D9D9;
+    display: flex;
 }
 /* end how-it-works */
 
@@ -191,6 +235,7 @@ nav ul a {
 /* 3d-1 */
 .three-d-content {
     display: flex;
+    padding: 80px 20px;
 }
 .three-d-text h3{
     font-size: 12px;
@@ -198,23 +243,35 @@ nav ul a {
     color: #6E6965;
     letter-spacing: 1px;
     font-family: 'poppins';
+    margin-bottom: 10px;
+}
+.three-d-text {
+    width: 65%;
+}
+.three-d-img-1 {
+    width: 45%;
 }
 .three-d-text h2 {
     font-size: 18px;
     color: #504E4E;
+    font-family: 'Outfit';
+    margin-bottom: 14px;
+
 }
 .three-d-text span {
     color: #C9732C;
 }
 .three-d-text p {
     font-size: 12px;
+    font-family: 'roboto';
+    font-weight: 300;
+    letter-spacing: 0.1px;
+    line-height: 18px;
     color: #555454;
-    font-weight: 100;
-    letter-spacing: 0.3px;
 }
 .three-d-text button {
     padding: 10px 15px;
-    font-size: 12px;
+    font-size: 11px;
     border-radius: 50px;
     border: 0;
     color: white;
@@ -223,11 +280,11 @@ nav ul a {
     font-family: 'outfit';
     letter-spacing: 1px;
     font-weight: 500;
+    margin-top: 20px;
 }
 /* to be changed later */
 .three-d-img-1 img{
-    width: 50%;
-    /* max width */
+    width: 100%;
 }
 /* end 3d-1 */
 
@@ -235,23 +292,31 @@ nav ul a {
 .testimonials {
     background-color: #D9D9D9;
 }
+.testimony-section {
+    padding: 10px;
+}
 .testimony-img {
     text-align: center;
 }
+.testimony-img img {
+    width: 25%;
+}
 .testimonials .section-title h1 {
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
     font-family: 'Poppins';
     color: #474343;
+    margin: 25px auto;
+    line-height: 20px;
 }
 .section-title span {
     color: #C9732C;
 }
 .testimony-content {
     color: white;
-    background-color: #454342;
+    background-color: #343434;
     width: 200px;
-    padding: 50px;
+    padding: 40px;
     border-radius: 5px;
     margin: 0px auto;
     text-align: center;
@@ -282,24 +347,37 @@ nav ul a {
 .three-d-content-2 {
     padding: 20px;
 }
+.three-d-img-2 {
+    width: 50%;
+}
+.quick-service {
+    width: 50%;
+}
 .three-d-img-2 img {
-    /* width: 169px; */
     width: 100%;
 }
 .quick-service h4{
     text-transform: uppercase;
     font-family: 'outfit';
     letter-spacing: 1px;
-    font-weight: 500;
+    font-weight: 600;
+    font-size: 11px;
+    color: #454342;
 }
 .quick-service h2 {
     text-transform: capitalize;
     font-family: 'outfit';
+    margin-top: 20px;
+    font-size: 20px;
+    color: #575151;
 }
 .quick-service p {
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 12px;
+    font-family: 'roboto';
+    font-weight: 300;
     padding: 20px 0;
+    letter-spacing: 0.1px;
+    line-height: 18px;
 }
 .quick-service span {
     color: #C9732C;
@@ -308,18 +386,19 @@ nav ul a {
     text-transform: uppercase;
     padding: 10px 20px;
     font-family: 'outfit';
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
     border: 0;
     background-color: #373838;
     color:#F28C38;
     border-radius: 50px;
+    font-size: 10px;
 }
+
 /* end 3d-2 */
 
 /* newsletter */
 .join-newsletter {
     color: white;
-    /* background-color: #C9732C; */
     padding-top: 20px;
     padding-bottom: 30px;
     background: linear-gradient(to right, #C9732C 50%, #C9732C 100%);
@@ -337,7 +416,7 @@ nav ul a {
 .news-letter-info {
     font-size: 12px;
     font-family: 'outfit';
-    font-weight: 100;
+    font-weight: 300;
     margin-bottom: 15px;
     padding: 5px 30px;
 }
@@ -361,7 +440,7 @@ nav ul a {
     background-color: transparent;
     outline: none;
 }
-.join-newsletter .subscribe button {
+.sub-btn {
     background-color: white;
     border: 0;
     padding: 5px 15px;
@@ -374,16 +453,33 @@ nav ul a {
 }
 /* footer */
 .footer-1 {
-    padding: 60px;
+    padding: 40px;
     background-color: #202020;
     color: #AFA9A9;
 }
+
 .footer-1 a {
     color: #AFA9A9;
 }
 .footer-sections {
     display: flex;
     justify-content: space-between;
+}
+.footer-section h4 {
+    font-size: 14px;
+    font-family: 'outfit';
+    font-weight: 500;
+}
+.footer-section ul {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.footer-section ul li {
+    font-size: 11px;
+    padding: 4px;
+    color: #AFA9A9;
+    letter-spacing: 0.3px;
+    font-weight: 300;
 }
 .copyright {
     background-color: #242424;
