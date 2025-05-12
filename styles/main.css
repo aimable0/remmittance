@@ -91,7 +91,9 @@ a {
 }
 .hero-sect {
     z-index: 1000;
+    width: 100%;
     text-align: left;
+    margin-left: 20px;
 }
 .hero h1,
 .hero p {
