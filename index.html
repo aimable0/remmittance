@@ -9,28 +9,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/desktop-screen.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <nav>
+            <nav class="mobile-nav">
                 <ul>
-                    <li class="logo"><a href="">REMMITTANCE</a></li>
+                    <li class="logo"><a href="index.html">REMMITTANCE</a></li>
                     <li class="nav-buttons">
-                        <a href="" class="log-in">Log in / Join</a>
+                        <a href="login.html" class="log-in">Log in / Join</a>
                         <img src="images/menu.png" alt="menu-icon">
                     </li>
                 </ul>
             </nav>
+            <div class="desktop-nav-container">
+                <nav class="desktop-nav">
+                    <h3>REMMITTANCE</h3>
+                    <ul class="desktop-nav-items">
+                        <li>home</li>
+                        <li>Airtime</li>
+                        <li>Buy Electricity</li>
+                        <li>TV Subscription</li>
+                        <li>Pay Taxes</li>
+                        <li><a href="login.html" class="log-in">Log in / Join</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <main>
         <!-- banner -->
         <div class="banner">
-            <div class="container">
+            <div class="overlay"></div>
+            <div class="container hero-sect">
                 <div class="row">
                     <div class="hero">
-                        <div class="overlay"></div>
                         <h1>Remmittance</h1>
                         <p>Buy services and pay for your <span><br>loved ones</span>, anytime<span> anywhere.</span> </p>
                     </div>
@@ -110,6 +124,32 @@
                             </div>
                             <div class="svc-btn">
                                 <button>Pay now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="desktop-services">
+                        <div>
+                            <div class="desktop-service">
+                                <h4>Airtime</h4>
+                                <img src="images/desktop-icons/call.png" alt="">
+                                <button>buy now</button>
+                            </div>
+                            <div class="desktop-service">
+                                <h4>Electricity</h4>
+                                <img src="images/desktop-icons/electric.png" alt="">
+                                <button>buy now</button>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="desktop-service">
+                                <h4>tv subscription</h4>
+                                <img src="images/desktop-icons/tv.png" alt="" width="200px">
+                                <button>buy now</button>
+                            </div>
+                            <div class="desktop-service">
+                                <h4>rra taxes</h4>
+                                <img src="images/desktop-icons/tax.png" alt="">
+                                <button>buy now</button>
                             </div>
                         </div>
                     </div>
