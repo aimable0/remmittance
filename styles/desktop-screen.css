@@ -199,4 +199,42 @@
     .subscribe {
       margin-bottom: 45px;
     }
+    .subscribe form input {
+      line-height: 24px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-size: 18px;
+      width: 100px;
+    }
+    input::placeholder {
+      font-size: 16px;
+    }
+    .sub-btn {
+      font-size: 16px;
+      padding-left: 40px;
+      padding-right: 40px;
+      border-radius: 50px;
+    }
+
+    /* footer */
+    .footer-sections {
+      width: 900px;
+      margin: 40px auto 20px;
+    }
+    .footer-section h4{
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+    .footer-section ul li {
+      font-size: 14px;
+      font-weight: 400;
+      margin-bottom: 8px;
+    }
+
+    .footer-section span {
+      color: #D97E2E
+    };
+    .copyright {
+      font-size: 14px;
+    }
 }

@@ -503,7 +503,8 @@ input::placeholder {
 @media (max-width: 767px) {
     .desktop-nav-container,
     .desktop-services,
-    .desktop-testimony {
+    .desktop-testimony,
+    .desktop-footer-services {
         display: none;
     }
 }
