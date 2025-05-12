@@ -1,5 +1,5 @@
 /* Desktop screens and up */
-@media (min-width: 1024px) {
+@media (min-width: 767px) {
     body {
       font-size: 20px;
       /* max-width: 900px; */
@@ -56,10 +56,11 @@
 
     /* banner */
     .hero h1 {
-      font-size: 80px;
+      font-size: 56px;
     }
     .hero p {
-      font-size: 28px;
+      font-size: 24px;
+      font-weight: 400;
     }
     .services-block {
       display: none;
@@ -98,7 +99,7 @@
       text-transform: uppercase;
       font-weight: 500;
       background-color: #D97E2E;
-      border-radius: 25px;
+      border-radius: 50px;
       border: 0;
       color: white;
       letter-spacing: 2px;
@@ -117,7 +118,15 @@
     /* 3d section */
     .three-d-1 {
       margin-top: 100px;
+      margin-bottom: 100px;
     }
+
+    .three-d-special {
+      /* for the pay instantly layout */
+      margin-left: 100px;
+      margin-right: 100px;
+    }
+
     .three-d-text div h3 {
       font-size: 18px;
     }
@@ -128,6 +137,7 @@
 
     .three-d-text div p {
       font-size: 16px;
+      line-height: 24px;
     }
     .three-d-text div button {
       font-size: 16px;
@@ -139,4 +149,54 @@
       width: 30%;
     }
 
+    /* deksotp - testimonial */
+    .dots {
+      display: none;
+    }
+    .testimonials .section-title h1 {
+      font-size: 32px;
+      line-height: 36px;
+    }
+    .testimonials .testimony-img {
+      width: 400px;
+    }
+    .testimonies {
+      width: fit-content;
+      display: flex;
+      justify-content: center;
+    }
+
+    /* 3d - 2 */
+    .quick-service div h4 {
+      margin-top: 15px;
+      font-size: 18px;
+    }
+    .quick-service div h2 {
+      font-size: 32px;
+    }
+    .quick-service p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .quick-service div button {
+      font-size: 16px;
+      padding: 15px 60px;
+      border-radius: 50px;
+    }
+
+    /* newsletter */
+    .newsletter-title h2 {
+      margin-top: 35px;
+      font-size: 32px;
+      margin-bottom: 25px;
+    }
+    .news-letter-info {
+      text-align: center;
+      font-size: 16px;
+      margin-bottom: 42px;
+    }
+    .subscribe {
+      margin-bottom: 45px;
+    }
 }

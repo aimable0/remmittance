@@ -237,14 +237,16 @@ a {
 .three-d-content {
     display: flex;
     padding: 80px 20px;
+    align-items: center;
 }
 .three-d-text h3{
     font-size: 12px;
     text-transform: uppercase;
     color: #6E6965;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
     font-family: 'poppins';
     margin-bottom: 10px;
+    font-weight: 500;
 }
 .three-d-text {
     width: 65%;
@@ -345,6 +347,7 @@ a {
 
 
 /* 3d-2 */
+
 .three-d-content-2 {
     padding: 20px;
 }
@@ -441,6 +444,11 @@ a {
     background-color: transparent;
     outline: none;
 }
+input::placeholder {
+    color: #f1f1f1;
+    font-size: 12px;
+    opacity: 1;
+}
 .sub-btn {
     background-color: white;
     border: 0;
@@ -494,7 +502,8 @@ a {
 /* hide desktop-items */
 @media (max-width: 767px) {
     .desktop-nav-container,
-    .desktop-services {
+    .desktop-services,
+    .desktop-testimony {
         display: none;
     }
 }
