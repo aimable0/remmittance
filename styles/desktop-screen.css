@@ -56,12 +56,37 @@
 
     /* banner */
     .hero h1 {
-      font-size: 56px;
+      font-size: 50px;
     }
     .hero p {
-      font-size: 24px;
+      font-size: 20px;
       font-weight: 400;
     }
+
+    .hero-btns button{
+      text-transform: uppercase;
+      padding: 15px 30px;
+      letter-spacing: 2px;
+      font-size: 16px;
+      border-radius: 50px;
+      margin-top: 40px;
+      margin-right: 20px;
+      font-family: 'roboto';
+      font-weight: 500;
+    }
+
+    .hero-btn-1 {
+      background-color: #D97E2E;
+      color: white;
+      border: 0;
+    }
+
+    .hero-btn-2 {
+      background-color: transparent;
+      border: 2px solid #D97E2E;
+      color: white;
+    }
+
     .services-block {
       display: none;
     }
@@ -153,20 +178,40 @@
     .dots {
       display: none;
     }
+    .testimonial-mini-title h4 {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 14px;
+      font-weight: 600;
+      font-family: 'outfit';
+      text-align: center;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
     .testimonials .section-title h1 {
       font-size: 32px;
       line-height: 36px;
+      margin-bottom: 60px;
     }
     .testimonials .testimony-img {
-      width: 400px;
+      width: 340px;
     }
     .testimonies {
       width: fit-content;
       display: flex;
       justify-content: center;
+      margin-bottom: 100px;
+    }
+    .testimony,
+    .testimony-img {
+      width: 340px;
     }
 
     /* 3d - 2 */
+    .three-d-2 .three-d-content {
+      margin-top: 100px;
+      margin-bottom: 100px;
+    }
     .quick-service div h4 {
       margin-top: 15px;
       font-size: 18px;

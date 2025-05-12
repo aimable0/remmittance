@@ -504,7 +504,9 @@ input::placeholder {
     .desktop-nav-container,
     .desktop-services,
     .desktop-testimony,
-    .desktop-footer-services {
+    .desktop-footer-services,
+    .hero-btns,
+    .testimonial-mini-title {
         display: none;
     }
 }
