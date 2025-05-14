@@ -6,6 +6,7 @@
     <title>Remmittance.com</title>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/service.css">
+    <link rel="stylesheet" href="styles/desktop-screen.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
@@ -14,23 +15,28 @@
 <body>
     <header>
         <div class="container">
-            <nav>
-                <ul>
-                    <li class="logo"><a href="index.html">REMMITTANCE</a></li>
-                    <li class="nav-buttons">
-                        <a href="" class="log-in">Log in / Join</a>
-                        <img src="images/menu.png" alt="menu-icon">
-                    </li>
-                </ul>
-            </nav>
+            <div class="row">
+                <div class="desktop-nav-container">
+                    <nav class="desktop-nav">
+                        <h3>REMMITTANCE</h3>
+                        <ul class="desktop-nav-items">
+                            <li><a href="index.html">home</a></li>
+                            <li><a href="airtime.html">Airtime</a></li>
+                            <li>Buy Electricity</li>
+                            <li>TV Subscription</li>
+                            <li>Pay Taxes</li>
+                            <li><a href="login.html" class="log-in">Log in / Join</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </div>
     </header>
     <main>
         <div class="service-banner">
             <div class="container">
                 <div class="row">
-                    <div class="hero service-buy-h">
-                        <div class="overlay"></div>
+                    <div class="service-buy-h">
                         <h1>Remmittance.com</h1>
                     </div>
                 </div>
@@ -67,68 +73,74 @@
             </div>
         </div>
     </main>
-    <footer>
-        <!-- <div class="join-newsletter">
-            <div class="container">
-                <div class="row">
-                    <div class="newsletter-title">
-                        <h2>Join our newsletter</h2>
-                    </div>
-                    <div>
-                        <p class="news-letter-info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti veniam error quasi sit aut cupiditate, assumenda asperiores vitae quae similique</p>
-                    </div>
-                    <div class="subscribe">
-                        <form action="">
-                            <input type="text" name="" id="" placeholder="Email Address">
-                            <button class="sub-btn">subsrcibe</button>
-                        </form>
-                    </div>
-                </div>
+    <div class="join-newsletter">
+        <div class="container">
+            <div class="row">
+            <div class="newsletter-title">
+                <h2>Join our newsletter</h2>
             </div>
-        </div> -->
-        <div class="footer-1">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-sections">
-                        <div>
-                            <div class="footer-section">
-                                <h4>Remmitance</h4>
-                                <ul>
-                                    <li><a href="">Home</a></li>
-                                    <li><a href="">Services</a></li>
-                                    <li><a href="">About</a></li>
-                                    <li><a href="">Contact</a></li>
-                                </ul>
-                            </div>
+            <div>
+                <p class="news-letter-info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti veniam error quasi sit aut cupiditate, assumenda asperiores vitae quae similique</p>
+            </div>
+            <div class="subscribe">
+                <form action="">
+                    <input type="text" name="" id="" placeholder="Email Address">
+                    <button>subsrcibe</button>
+                </form>
+            </div>
+            </div>
+        </div>
+    </div>
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-tabs">
+                    <div class="upper-footer">
+                        <div class="footer-section">
+                            <h2 class="footer-heading">About <span>Us</span></h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quas in non nobis, provident tempore laborum! Distinctio, veritatis ut cum doloribus, recusandae nostrum asperiores corrupti quae numquam, fugiat nisi tempore.</p>
                         </div>
-                        <div>
-                            <div class="footer-section">
-                                <h4>Accepted Cards</h4>
-                                <ul>
-                                    <li>Visa</li>
-                                    <li>MasterCard</li>
-                                    <li>PayPal</li>
-                                    <li>JCB</li>
-                                </ul>
-                            </div>
+                        <div class="footer-section">
+                            <h4 class="footer-heading">Quick Links</h4>
+                            <ul>
+                                <li><a href=""><span> > </span>Home</a></li>
+                                <li><a href=""><span> > </span>Services</a></li>
+                                <li><a href=""><span> > </span>About</a></li>
+                                <li><a href=""><span> > </span>Contact</a></li>
+                            </ul>
                         </div>
-                        <div>
-                            <div class="footer-section">
-                                <h4>Contact</h4>
-                                <ul>
-                                    <li><a href="">Email</a></li>
-                                    <li><a href="">Linkedin</a></li>
-                                    <li><a href="">Instagram</a></li>
-                                    <li><a href="">Twitter</a></li>
-                                </ul>
-                            </div>
+                        <div class="footer-section">
+                            <h4 class="footer-heading">Aceepted Cards</h4>
+                            <ul>
+                                <li> -> Visa</li>
+                                <li> -> MasterCard</li>
+                                <li> -> PayPal</li>
+                                <li> -> JCB</li>
+                            </ul>
+                        </div>
+                        <div class="footer-section">
+                            <h4 class="footer-heading">Get in Touch</h4>
+                            <ul>
+                                <li>Email: support@remittance.com</li>
+                                <li>Phone: +250 791275915</li>
+                                <li>Location: Kicukiro, Kigali - Rwanda</li>
+                                <div class="social-icon">
+                                    <ul>
+                                        <li>facebook</li>
+                                        <li>Twitter</li>
+                                        <li>Instagram</li>
+                                        <li>LinkedIn</li>
+                                    </ul>
+                                </div>
+                            </ul>
                         </div>
                     </div>
-
+                    <div class="copyright">
+                        <p> &copy; 2025 <span>Remmittance </span> | All rights reserved</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <p class="copyright"> &copy; copyright 2025 | Remmittance</p>
     </footer>
 </body>
 </html>

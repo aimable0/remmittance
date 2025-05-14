@@ -1,3 +1,6 @@
+.buy-service {
+  z-index: 1000;
+}
 .service-buy-h h1 {
   text-align: center;
 }
