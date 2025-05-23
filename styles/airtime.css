@@ -1,0 +1,20 @@
+.service-banner {
+    background-color: #393939;
+    height: 300px;
+}
+.service-headings {
+    margin-top: 100px;
+}
+.service-mini-title {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    text-align: center;
+    color: #D97C2E;
+    font-family: 'outfit';
+}
+.service-title {
+    color: white;
+    font-family: 'outfit';
+    letter-spacing: 1px;
+}

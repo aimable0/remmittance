@@ -29,7 +29,9 @@ a {
     text-decoration: none;
 }
 /* all */
-
+.desktop-nav-items li {
+    font-family: 'outfit';
+}
 /* mobile - header */
 .mobile-nav {
     background-color: #D9D9D9;
